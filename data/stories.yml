@@ -102,3 +102,17 @@ stories:
     - intent: deny
     - action: utter_poison_response
     - action: utter_did_that_help
+
+- story: out of scope stop
+  steps:
+    - intent: out_of_scope
+    - action: utter_ask_continue
+    - intent: deny
+    - action: utter_goodbye
+
+- story: out of scope continue
+  steps:
+    - intent: out_of_scope
+    - action: utter_ask_continue
+    - intent: affirm
+    - action: utter_greet

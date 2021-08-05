@@ -15,6 +15,7 @@ intents:
   - vision_symptom
   - stomach_symptom
   - bot_challenge
+  - out_of_scope
 
 responses:
   utter_greet:
@@ -57,6 +58,8 @@ responses:
   - text: "Following are the remedies for some other causes of Stomach-ache :\n\ Lower Abdomen Pain - 1. Use a heating bag, 2.Reduce your intake of coffee, tea and alcohol as these can make the pain worse. 3.Get plenty of rest.\n\ Vomiting - 1.Eat light, bland foods 2.Avoid fried, greasy, or sweet foods. 3.Eat slowly and eat smaller, more frequent meals.\n\ Loose Motions - 1.Drink ginger juice, 2. Drink lemon and salt water 3. Eat pomegranate"
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  utter_ask_continue:
+  - text: "Sorry, I don't quite understand. Do you want to continue?"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
